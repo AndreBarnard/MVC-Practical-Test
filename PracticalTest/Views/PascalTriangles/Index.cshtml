@@ -1,0 +1,26 @@
+﻿@model IEnumerable<PracticalTest.Models.PascalTriangles>
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Pascal Triangle</h2>
+
+
+<table>
+
+@foreach (var item in Model)
+{
+    string rowvalues = "";
+    foreach (int value in item.PascalRows)
+    {
+        rowvalues += $"{value.ToString()} ";
+    }
+    <tr>
+        <td align="center">@rowvalues</td>
+    </tr>
+  }
+
+</table>
+
+
+

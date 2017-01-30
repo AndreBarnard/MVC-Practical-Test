@@ -1,0 +1,34 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+<div class="jumbotron">
+    <h1>Digital Outsource Services</h1>
+    <p class="lead">Practical Tests See below links to Test 1, 2 and 3</p>
+</div>
+
+<div class="row">
+    <div class="col-md-4">
+        <h2>Number Series</h2>
+        <p>Read in a series of numbers from a text-file (the data is given below). For each row in the file, setup a thread to calculate the sum of the values of that vector. Each of the vector sums must then be written to a new file, sorted in ascending order</p>
+        <p class="btn btn-default" >@Html.ActionLink("Test 1","../NumberSeries/Index")</p>
+    </div>
+    <div class="col-md-4">
+        <h2>Pascal Triangle </h2>
+        <p>The numbers at the edge of the triangle are all 1, and each number inside the triangle is the sum of the two numbers above it. Write a function that computes the elements of Pascal’s triangle by means of a recursive process.</p>
+        <p class="btn btn-default">@Html.ActionLink("Test 2", "../PascalTriangles/Index")</p>
+    </div>
+    <div class="col-md-4">
+        <h2>SOLID principles.</h2>
+        <p>Refactor code using SOLID principles.</p>
+        <p class="btn btn-default">@Html.ActionLink("Test 3", "../SOLID/Index")</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-md-4">
+        <h2>Players message queue</h2>
+        <p>Write a MVC web view that captures players’ details (registration details). On submission put the data on a message queue.</p>
+        <p class="btn btn-default">@Html.ActionLink("Test 4", "../Players/Create")</p>
+    </div>
+</div>

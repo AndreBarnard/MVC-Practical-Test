@@ -1,0 +1,25 @@
+﻿@model IEnumerable<PracticalTest.Models.NumberSeries>
+
+@{
+    ViewBag.Title = "View";
+}
+
+<h2>Number Series</h2>
+
+<table class="table">
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.OutNumber)
+        </td>
+        @*<td>
+            @Html.ActionLink("Edit", "Edit", new { /* id=item.PrimaryKey */ }) |
+            @Html.ActionLink("Details", "Details", new { /* id=item.PrimaryKey */ }) |
+            @Html.ActionLink("Delete", "Delete", new { /* id=item.PrimaryKey */ })
+        </td>*@
+    </tr>
+}
+
+</table>
+
+<p><a class="btn btn-default" href="../Files/NumberSeriesOut.txt" target="_blank">Download Output files &raquo;</a></p>
